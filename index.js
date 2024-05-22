@@ -14,10 +14,6 @@ router
     ctx.body = 'Goodbye, world';
     });
 
-/*app.use(ctx => {
-  ctx.body = 'Hello, world';
-});
-*/
 app
   .use(router.routes())
   .use(router.allowedMethods());
